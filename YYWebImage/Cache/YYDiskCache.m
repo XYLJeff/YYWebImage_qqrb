@@ -151,9 +151,10 @@ static void _YYDiskCacheSetGlobal(YYDiskCache *cache) {
 }
 
 - (void)_appWillBeTerminated {
-    Lock();
-    _kv = nil;
-    Unlock();
+//    Lock();
+//    _kv = nil;
+//    Unlock();
+    return;
 }
 
 #pragma mark - public
